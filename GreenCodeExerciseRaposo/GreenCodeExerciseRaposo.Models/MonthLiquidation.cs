@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace GreenCodeExerciseRaposo.Models
 {
-	public class MonthlyLiquidation
+	public class MonthLiquidation
 	{
-		public int Month { get; set; }
+		public int Id { get; set; }
 
-		public int GetTotalValue ()
-		{
-			return 999;
-		}
+		public int MonthNumber { get; set; }
+
+		public Dictionary<string, double> MonthValues { get; set; }
 	}
 }

@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Models", "GreenCodeExerciseRaposo.Models\GreenCodeExerciseRaposo.Models.csproj", "{35FE700F-21A2-474A-BC5E-E432638CB81B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.DAL", "GreenCodeExerciseRaposo.DAL\GreenCodeExerciseRaposo.DAL.csproj", "{7F6E4150-4DD7-4868-BBF6-314931344642}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Services", "GreenCodeExerciseRaposo.DAL\GreenCodeExerciseRaposo.Services.csproj", "{7F6E4150-4DD7-4868-BBF6-314931344642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Entities", "GreenCodeExerciseRaposo.Entities\GreenCodeExerciseRaposo.Entities.csproj", "{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.DAL", "GreenCodeExerciseRaposo.Entities\GreenCodeExerciseRaposo.DAL.csproj", "{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

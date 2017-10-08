@@ -235,7 +235,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MonthLiquidation.cs" />
+    <Compile Include="Controllers\MonthLiquidationController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -316,6 +316,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GreenCodeExerciseRaposo.DAL\GreenCodeExerciseRaposo.Services.csproj">
+      <Project>{7F6E4150-4DD7-4868-BBF6-314931344642}</Project>
+      <Name>GreenCodeExerciseRaposo.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreenCodeExerciseRaposo.Models\GreenCodeExerciseRaposo.Models.csproj">
+      <Project>{35FE700F-21A2-474A-BC5E-E432638CB81B}</Project>
+      <Name>GreenCodeExerciseRaposo.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

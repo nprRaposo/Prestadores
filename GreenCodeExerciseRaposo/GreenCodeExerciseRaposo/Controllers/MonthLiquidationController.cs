@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GreenCodeExerciseRaposo.DAL;
+using GreenCodeExerciseRaposo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,16 +11,10 @@ namespace GreenCodeExerciseRaposo.Controllers
 {
 	public class MonthLiquidationController : ApiController
 	{
-		// GET api/<controller>
-		public IEnumerable<string> Get()
-		{
-			return new string[] { "value1", "value2" };
-		}
-
 		// GET api/<controller>/5
-		public string Get(int id)
+		public MonthLiquidation Get(int month)
 		{
-			return "value";
+			return MonthlyLiquidationService.GetMonthDetail(month);
 		}
 	}
 }

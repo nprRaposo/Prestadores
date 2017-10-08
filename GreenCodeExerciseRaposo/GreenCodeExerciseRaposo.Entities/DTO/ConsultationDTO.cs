@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GreenCodeExerciseRaposo.Entities
+namespace GreenCodeExerciseRaposo.DAL.DTO
 {
 	public class ConsultationDTO
 	{

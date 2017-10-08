@@ -1,4 +1,5 @@
-﻿using GreenCodeExerciseRaposo.Entities;
+﻿using GreenCodeExerciseRaposo.Models;
+using GreenCodeExerciseRaposo.Services.Mappers;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,16 +7,9 @@ namespace GreenCodeExerciseRaposo.DAL
 {
 	public class BasicConsultationService
 	{
-		private static List <ConsultationDTO> _consultations { get; set; }
-
-		public static List<ConsultationDTO> GetConsultationsByProvider(int providerId)
+		public static List<Consultation> GetConsultationsByProvider(int providerId)
 		{
-			return _consultations.Where(c => c.IsBasicConsultation && c.ProviderId.Equals(providerId)).ToList();
+			return BasicConsultationRepository.GetConsultationsByProvider(providerId).Select(c => BasicConsultationMapper.FromDto(c)).ToList();
 		}
-
-		public static List<ConsultationDTO> GetDomiciliaryConsultationsBy(int idDomiciliary)
-		{
-			return _consultations.Where(c => ! c.IsBasicConsultation && c.DomiciliaryConsultationId.Equals(idDomiciliary)).ToList();
-		}
-    }
+	}
 }

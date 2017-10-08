@@ -1,11 +1,8 @@
-﻿using GreenCodeExerciseRaposo.Entities;
-using System;
-using System.Collections.Generic;
+﻿using GreenCodeExerciseRaposo.DAL.DTO;
+using GreenCodeExerciseRaposo.Models;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace GreenCodeExerciseRaposo.Models.Mappers
+namespace GreenCodeExerciseRaposo.Services.Mappers
 {
 	public static class ProviderMapper
 	{

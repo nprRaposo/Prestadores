@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GreenCodeExerciseRaposo.Entities
+namespace GreenCodeExerciseRaposo.DAL.DTO
 {
 	public class DomiciliaryConsultationDTO
 	{

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenCodeExerciseRaposo.Entities
+namespace GreenCodeExerciseRaposo.DAL.DTO
 {
 	public class ProviderDTO
 	{
