@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Web", "GreenCodeExerciseRaposo\GreenCodeExerciseRaposo.Web.csproj", "{A805507F-1275-411F-8BF2-D62CBA6DFE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Tests", "GreenCodeExerciseRaposo.Tests\GreenCodeExerciseRaposo.Tests.csproj", "{7D81CE00-A236-4836-8F34-4ED2774F96B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Models", "GreenCodeExerciseRaposo.Models\GreenCodeExerciseRaposo.Models.csproj", "{35FE700F-21A2-474A-BC5E-E432638CB81B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.DAL", "GreenCodeExerciseRaposo.DAL\GreenCodeExerciseRaposo.DAL.csproj", "{7F6E4150-4DD7-4868-BBF6-314931344642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Entities", "GreenCodeExerciseRaposo.Entities\GreenCodeExerciseRaposo.Entities.csproj", "{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A805507F-1275-411F-8BF2-D62CBA6DFE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A805507F-1275-411F-8BF2-D62CBA6DFE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A805507F-1275-411F-8BF2-D62CBA6DFE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A805507F-1275-411F-8BF2-D62CBA6DFE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D81CE00-A236-4836-8F34-4ED2774F96B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D81CE00-A236-4836-8F34-4ED2774F96B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D81CE00-A236-4836-8F34-4ED2774F96B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D81CE00-A236-4836-8F34-4ED2774F96B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FE700F-21A2-474A-BC5E-E432638CB81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FE700F-21A2-474A-BC5E-E432638CB81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FE700F-21A2-474A-BC5E-E432638CB81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FE700F-21A2-474A-BC5E-E432638CB81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6E4150-4DD7-4868-BBF6-314931344642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6E4150-4DD7-4868-BBF6-314931344642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6E4150-4DD7-4868-BBF6-314931344642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6E4150-4DD7-4868-BBF6-314931344642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
