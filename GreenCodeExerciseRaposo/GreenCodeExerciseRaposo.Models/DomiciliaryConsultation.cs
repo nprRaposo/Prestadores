@@ -8,9 +8,26 @@ namespace GreenCodeExerciseRaposo.Models
 {
 	public class DomiciliaryConsultation : Consultation
 	{
-		public override int GetConsultationCost()
+
+		public List<Consultation> Consultations { get; set; }
+
+		public int DistanceTravelled { get; set; }
+
+		public override double GetConsultationCost()
 		{
-			return base.GetConsultationCost() + 0;
+			var totalBasicConsultations = 0.0;
+
+			foreach (var consultation in Consultations)
+			{
+				totalBasicConsultations += consultation.GetConsultationCost();
+			}
+
+			return GetCostOfConsultation(totalBasicConsultations);
+		}
+
+		private double GetCostOfConsultation(double totalBasicConsultations)
+		{
+			return totalBasicConsultations * 1.25 + DistanceTravelled * this.Provider.CostPerKm;
 		}
 	}
 }

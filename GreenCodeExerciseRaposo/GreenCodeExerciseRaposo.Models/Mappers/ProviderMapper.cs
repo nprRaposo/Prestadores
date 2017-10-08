@@ -11,14 +11,19 @@ namespace GreenCodeExerciseRaposo.Models.Mappers
 	{
 		public static Provider FromDto(ProviderDTO providerDto)
 		{
-			return new Provider
+			var provider = new Provider
 			{
 				Id = providerDto.Id,
 				BasicConsultationValue = providerDto.BasicConsultationValue,
 				MinimumSalary = providerDto.MinimumSalary,
 				Name = providerDto.Name,
-				Consultations = providerDto.Consultations.Select(c => ConsultationMapper.FromDto(c)).ToList()
+				CostPerKm = providerDto.CostPerKm
 			};
+
+			provider.Consultations = providerDto.Consultations.Select(c => BasicConsultationMapper.FromDto(c)).ToList();
+			provider.Consultations.AddRange(providerDto.DomiciliaryConsultations.Select(dc => DomiciliaryConsultationMapper.FromDto(dc)));
+
+			return provider;
 		}
 	}
 }

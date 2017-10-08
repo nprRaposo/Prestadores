@@ -42,13 +42,18 @@
   <ItemGroup>
     <Compile Include="DomiciliaryConsultation.cs" />
     <Compile Include="Consultation.cs" />
+    <Compile Include="Mappers\DomiciliaryConsultationMapper.cs" />
     <Compile Include="Mappers\ProviderMapper.cs" />
-    <Compile Include="Mappers\ConsultationMapper.cs" />
+    <Compile Include="Mappers\BasicConsultationMapper.cs" />
     <Compile Include="MonthlyLiquidation.cs" />
     <Compile Include="Provider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GreenCodeExerciseRaposo.DAL\GreenCodeExerciseRaposo.DAL.csproj">
+      <Project>{7F6E4150-4DD7-4868-BBF6-314931344642}</Project>
+      <Name>GreenCodeExerciseRaposo.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GreenCodeExerciseRaposo.Entities\GreenCodeExerciseRaposo.Entities.csproj">
       <Project>{86B2F61D-8415-44CF-84C1-5A9C1A6E48B8}</Project>
       <Name>GreenCodeExerciseRaposo.Entities</Name>

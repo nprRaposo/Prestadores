@@ -16,12 +16,14 @@ namespace GreenCodeExerciseRaposo.Models
 
 		public int MinimumSalary { get; set; }
 
+		public int CostPerKm { get; set; }
+
 		public List<Consultation> Consultations { get; set; }
 
-		public int GetMonthlyEarntValue(int month)
+		public double GetMonthlyEarntValue(int month)
 		{
 			var monthlyConsultations = this.Consultations.Where(c => c.IssuedDate.Month.Equals(month));
-			var monthlyTotal = 0;
+			var monthlyTotal = 0.0;
 
 			foreach (var consultation in monthlyConsultations)
 			{

@@ -9,16 +9,16 @@ namespace GreenCodeExerciseRaposo.DAL
 {
     public class ProviderService
 	{
-		private List <ProviderDTO> _providers { get; set; }
+		private static List <ProviderDTO> _providers { get; set; }
 
-		public List<ProviderDTO> GetProviders()
+		public static List<ProviderDTO> GetProviders()
 		{
 			return new List<ProviderDTO>();
 		}
 
-		public ProviderDTO GetProviderBy(int id)
+		public static ProviderDTO GetProviderBy(int id)
 		{
-			return this._providers.FirstOrDefault(p => p.Id.Equals(id));
+			return _providers.FirstOrDefault(p => p.Id.Equals(id));
 		}
     }
 }

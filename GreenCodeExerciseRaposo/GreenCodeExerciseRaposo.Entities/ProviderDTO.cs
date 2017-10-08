@@ -16,6 +16,10 @@ namespace GreenCodeExerciseRaposo.Entities
 
 		public int MinimumSalary { get; set; }
 
+		public int CostPerKm { get; set; }
+
 		public List<ConsultationDTO> Consultations { get; set; }
+
+		public List<DomiciliaryConsultationDTO> DomiciliaryConsultations { get; set; }
 	}
 }
