@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Web", "GreenCodeExerciseRaposo\GreenCodeExerciseRaposo.Web.csproj", "{A805507F-1275-411F-8BF2-D62CBA6DFE6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Tests", "GreenCodeExerciseRaposo.Tests\GreenCodeExerciseRaposo.Tests.csproj", "{7D81CE00-A236-4836-8F34-4ED2774F96B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Models.Tests", "GreenCodeExerciseRaposo.Tests\GreenCodeExerciseRaposo.Models.Tests.csproj", "{7D81CE00-A236-4836-8F34-4ED2774F96B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenCodeExerciseRaposo.Models", "GreenCodeExerciseRaposo.Models\GreenCodeExerciseRaposo.Models.csproj", "{35FE700F-21A2-474A-BC5E-E432638CB81B}"
 EndProject
