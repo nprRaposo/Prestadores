@@ -12,9 +12,9 @@ namespace GreenCodeExerciseRaposo.Controllers
 	public class MonthLiquidationController : ApiController
 	{
 		// GET api/<controller>/5
-		public MonthLiquidation Get(int month)
+		public MonthLiquidation Get(int month, int year)
 		{
-			return MonthlyLiquidationService.GetMonthDetail(month);
+			return MonthlyLiquidationService.GetMonthDetail(month, year);
 		}
 	}
 }

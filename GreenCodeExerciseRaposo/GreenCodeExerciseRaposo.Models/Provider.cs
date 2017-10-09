@@ -20,9 +20,9 @@ namespace GreenCodeExerciseRaposo.Models
 
 		public List<Consultation> Consultations { get; set; }
 
-		public double GetMonthlyEarntValue(int month)
+		public double GetMonthlyEarntValue(int month,int year)
 		{
-			var monthlyConsultations = this.Consultations.Where(c => c.IssuedDate.Month.Equals(month));
+			var monthlyConsultations = this.Consultations.Where(c => c.IssuedDate.Month.Equals(month) && c.IssuedDate.Year.Equals(year));
 			var monthlyTotal = 0.0;
 
 			foreach (var consultation in monthlyConsultations)

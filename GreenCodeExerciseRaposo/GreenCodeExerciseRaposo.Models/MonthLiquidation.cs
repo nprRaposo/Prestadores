@@ -13,5 +13,7 @@ namespace GreenCodeExerciseRaposo.Models
 		public int MonthNumber { get; set; }
 
 		public Dictionary<string, double> MonthValues { get; set; }
+
+		public int YearNumber { get; set; }
 	}
 }
