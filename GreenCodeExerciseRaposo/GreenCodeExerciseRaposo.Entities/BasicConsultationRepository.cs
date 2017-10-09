@@ -55,6 +55,22 @@ namespace GreenCodeExerciseRaposo.DAL
 				IssuedDate = new System.DateTime(2017, 01, 13),
 				DomiciliaryConsultationId = 1
 			});
+
+			_consultations.Add(new ConsultationDTO
+			{
+				Id = 5,
+				ProviderId = 2,
+				IssuedDate = new System.DateTime(2017, 01, 14),
+				DomiciliaryConsultationId = 0
+			});
+
+			_consultations.Add(new ConsultationDTO
+			{
+				Id = 6,
+				ProviderId = 2,
+				IssuedDate = new System.DateTime(2017, 01, 15),
+				DomiciliaryConsultationId = 0
+			});
 		}
 
 		public List<ConsultationDTO> GetConsultationsByProvider(int providerId)
