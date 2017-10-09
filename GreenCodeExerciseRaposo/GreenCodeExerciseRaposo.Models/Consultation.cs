@@ -14,7 +14,7 @@ namespace GreenCodeExerciseRaposo.Models
 
 		public int ProviderId { get; set; }
 
-		public Provider Provider { get { return ProviderMapper.FromDto(ProviderRepository.Instance().GetProviderBy(ProviderId)); } }
+		public Provider Provider { get; set; }
 
 		public DateTime IssuedDate { get; set; }
 

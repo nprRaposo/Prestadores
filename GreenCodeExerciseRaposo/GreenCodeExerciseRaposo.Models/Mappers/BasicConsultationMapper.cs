@@ -12,7 +12,8 @@ namespace GreenCodeExerciseRaposo.Models.Mappers
 			{
 				Id = consultationDto.Id,
 				IssuedDate = consultationDto.IssuedDate,
-				ProviderId = consultationDto.ProviderId
+				ProviderId = consultationDto.ProviderId,
+				Provider = ProviderMapper.FromDto(ProviderRepository.Instance().GetProviderByIdLazy(consultationDto.ProviderId))
 			};
 		}
 	}

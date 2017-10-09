@@ -80,5 +80,14 @@ namespace GreenCodeExerciseRaposo.DAL
 		{
 			return _providers.FirstOrDefault(p => p.Id.Equals(id));
 		}
+
+		public ProviderDTO GetProviderByIdLazy(int id)
+		{
+			//Doing an override of the collection's references in order to avoid circular references.
+			var provider = _providers.FirstOrDefault(p => p.Id.Equals(id));
+			provider.Consultations = new List<ConsultationDTO>();
+			provider.DomiciliaryConsultations = new List<DomiciliaryConsultationDTO>();
+			return provider;
+		}
 	}
 }
