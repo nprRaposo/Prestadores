@@ -9,8 +9,6 @@ namespace GreenCodeExerciseRaposo.DAL.DTO
 
 		public int ProviderId{ get; set; }
 
-		public DateTime IssuedDate { get; set; }
-
 		public List<ConsultationDTO> Consultations { get; set; }
 
 		public int DistanceTravelled { get; set; }

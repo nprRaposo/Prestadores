@@ -30,7 +30,7 @@ namespace GreenCodeExerciseRaposo.Models
 				monthlyTotal += consultation.GetConsultationCost();
 			}
 
-			return monthlyTotal;
+			return monthlyTotal + MinimumSalary;
 		}
     }
 }

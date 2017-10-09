@@ -42,9 +42,6 @@
   <ItemGroup>
     <Compile Include="DomiciliaryConsultationService.cs" />
     <Compile Include="BasicConsultationService.cs" />
-    <Compile Include="Mappers\BasicConsultationMapper.cs" />
-    <Compile Include="Mappers\DomiciliaryConsultationMapper.cs" />
-    <Compile Include="Mappers\ProviderMapper.cs" />
     <Compile Include="MonthlyLiquidationService.cs" />
     <Compile Include="ProviderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

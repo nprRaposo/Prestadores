@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenCodeExerciseRaposo.Services.Mappers
+namespace GreenCodeExerciseRaposo.Models.Mappers
 {
 	public static class DomiciliaryConsultationMapper
 	{
@@ -16,10 +16,9 @@ namespace GreenCodeExerciseRaposo.Services.Mappers
 			return new DomiciliaryConsultation
 			{
 				Id = consultationDto.Id,
-				IssuedDate = consultationDto.IssuedDate,
-				Provider = ProviderMapper.FromDto(ProviderRepository.GetProviderBy(consultationDto.ProviderId)),
+				ProviderId = consultationDto.ProviderId,
 				DistanceTravelled = consultationDto.DistanceTravelled,
-				Consultations = BasicConsultationRepository.GetDomiciliaryConsultationsBy(consultationDto.Id)
+				Consultations = BasicConsultationRepository.Instance().GetDomiciliaryConsultationsBy(consultationDto.Id)
 								.Select(c => BasicConsultationMapper.FromDto(c)).ToList()
 			};
 		}

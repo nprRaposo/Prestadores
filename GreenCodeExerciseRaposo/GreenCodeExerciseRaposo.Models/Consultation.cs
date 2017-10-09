@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GreenCodeExerciseRaposo.DAL;
+using GreenCodeExerciseRaposo.Models.Mappers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,9 @@ namespace GreenCodeExerciseRaposo.Models
 	{
 		public int Id { get; set; }
 
-		public Provider Provider { get; set; }
+		public int ProviderId { get; set; }
+
+		public Provider Provider { get { return ProviderMapper.FromDto(ProviderRepository.Instance().GetProviderBy(ProviderId)); } }
 
 		public DateTime IssuedDate { get; set; }
 
@@ -24,7 +28,7 @@ namespace GreenCodeExerciseRaposo.Models
 			var basicConsultationCost = this.Provider.BasicConsultationValue;
 			if (this.IsBusinessDay(issuedDate))
 			{
-				return  basicConsultationCost * this.GetBusinessDayCharge(issuedDate);
+				return basicConsultationCost * this.GetBusinessDayCharge(issuedDate);
 			}
 
 			return basicConsultationCost * 1.5;
@@ -41,7 +45,7 @@ namespace GreenCodeExerciseRaposo.Models
 			if (issuedDate.Hour >= 8 && issuedDate.Hour <= 20)
 				return 1;
 			return 1.35;
-		} 
+		}
 		#endregion
 	}
 }

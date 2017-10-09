@@ -1,5 +1,5 @@
 ﻿using GreenCodeExerciseRaposo.Models;
-using GreenCodeExerciseRaposo.Services.Mappers;
+using GreenCodeExerciseRaposo.Models.Mappers;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,7 +9,7 @@ namespace GreenCodeExerciseRaposo.DAL
 	{
 		public static List<DomiciliaryConsultation> GetConsultationsByProvider(int providerId)
 		{
-			return DomiciliaryConsultationRepository.GetConsultationsByProvider(providerId).Select(dc => DomiciliaryConsultationMapper.FromDto(dc)).ToList();
+			return DomiciliaryConsultationRepository.Instance().GetConsultationsByProvider(providerId).Select(dc => DomiciliaryConsultationMapper.FromDto(dc)).ToList();
 		}
     }
 }

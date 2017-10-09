@@ -2,7 +2,7 @@
 using GreenCodeExerciseRaposo.DAL.DTO;
 using GreenCodeExerciseRaposo.Models;
 
-namespace GreenCodeExerciseRaposo.Services.Mappers
+namespace GreenCodeExerciseRaposo.Models.Mappers
 {
 	public static class BasicConsultationMapper
 	{
@@ -12,7 +12,7 @@ namespace GreenCodeExerciseRaposo.Services.Mappers
 			{
 				Id = consultationDto.Id,
 				IssuedDate = consultationDto.IssuedDate,
-				Provider = ProviderMapper.FromDto(ProviderRepository.GetProviderBy(consultationDto.ProviderId))
+				ProviderId = consultationDto.ProviderId
 			};
 		}
 	}

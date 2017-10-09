@@ -2,7 +2,7 @@
 using GreenCodeExerciseRaposo.Models;
 using System.Linq;
 
-namespace GreenCodeExerciseRaposo.Services.Mappers
+namespace GreenCodeExerciseRaposo.Models.Mappers
 {
 	public static class ProviderMapper
 	{
